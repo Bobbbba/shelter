@@ -80,8 +80,9 @@ a {
     margin: 0px auto;
     align-items: center;
 }
-.start_screen_images {
-    width: ;
+.start_screen_images  {
+    max-height: 728px;
+    padding-left: 10px;
 }
 
 .start_screen_title {
