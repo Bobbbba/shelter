@@ -107,6 +107,7 @@ a {
 
 .start_screen_button {
   padding: 15px 45px;
+  cursor: pointer;
  
   
   
@@ -114,13 +115,17 @@ a {
   margin-bottom: 40px;
   background-color: #f1cdb3;
 }
-.start_screen_button a {
+.start_screen_button  {
   color: #292929;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 6%;
   line-height: 130%;
+   padding: 15px 45px;
+}
+.start_screen_button:hover {
+  background-color: #fddcc4;
 }
 
 .start_text {
@@ -227,13 +232,14 @@ h4 {
 .button_primary  {
   
   padding: 15px 45px;
-  border: 2px solid #f1cdb3;
+  /* border: 2px solid #f1cdb3; */
   border-radius: 100px;
   text-align: center;
   margin: 60px auto;
   justify-content: center;
   display: flex;
   cursor: pointer;
+  background-color: #f1cdb3;
 }
 .button_primary a {
   color: #292929;
@@ -242,6 +248,10 @@ h4 {
   letter-spacing: 6%;
   font-size: 17px;
   line-height: 130%;
+}
+.button_primary:hover {
+  background-color: #fddcc4;
+  /* border: 2px solid #fddcc4; */
 }
 
 .slider_arrow {
