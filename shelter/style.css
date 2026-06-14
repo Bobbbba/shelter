@@ -290,7 +290,7 @@ h5 {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 99.5px;
 }
 
 .credit_card_content {
@@ -301,7 +301,6 @@ h5 {
   margin-bottom: 20px;
   width: 349px;
   border-radius: 9px;
-
 }
 
 .donation_text {
@@ -332,7 +331,6 @@ h6 {
   color: #545454;
   line-height: 110%;
   padding-bottom: 20px;
-
 }
 
 .donation_image {
@@ -341,4 +339,64 @@ h6 {
 
 .donation_title {
   padding-bottom: 20px;
+}
+
+
+.footer_container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 16px;
+  padding-bottom: 0px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.footer_locations_title {
+  color: #ffffff;
+}
+.footer_contacts_title {
+  color: #ffffff;
+}
+footer h5 {
+  color: #f1cdb3;
+}
+.footer_contacts_email {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer_locations_place {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+.footer_contacts_title {
+  padding-bottom: 40px;
+}
+.footer_locations_title {
+  padding-bottom: 34px;
+}
+.footer_locations_place {
+  padding-bottom: 31px;
+}
+.footer_contacts_email {
+  padding-bottom: 40px;
+}
+.footer_locations {
+  padding-right: 6px;
+  padding-top: 21px;
+}
+.footer_h5 {
+  padding-left: 20px;
+}
+.footer_central {
+  padding-left: 20px;
+}
+.footer_contacts {
+padding-top: 21px;
 }
