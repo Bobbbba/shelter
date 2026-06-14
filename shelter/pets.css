@@ -183,6 +183,7 @@ footer h5 {
   
 }
 .footer_contacts_title {
+    align-items: start;
   padding-bottom: 40px;
 }
 .footer_locations_title {
@@ -206,4 +207,35 @@ footer h5 {
 }
 .footer_contacts {
 padding-top: 21px;
+}
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 20px;
+  color: #545454;
+  line-height: 115%;
+}
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+  text-align: center;
+}
+.footer_contacts_title {
+    text-align: start;
+}
+.footer_locations_title {
+    text-align: start;
+}
+.first  {
+  border-bottom: 3px solid #f1cdb3;
+  
+}
+.first a {
+ 
+  color: #292929;
 }
