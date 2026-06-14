@@ -57,6 +57,9 @@ a {
   line-height: 110%;
   padding-bottom: 10px;
 }
+.logo {
+  cursor: pointer;
+}
 
 .logo p {
   font-family: Arial, Helvetica, sans-serif;
@@ -104,15 +107,20 @@ a {
 
 .start_screen_button {
   padding: 15px 45px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-size: 17px;
-  color: #292929;
-  letter-spacing: 6%;
-  line-height: 130%;
+ 
+  
+  
   border-radius: 100px;
   margin-bottom: 40px;
   background-color: #f1cdb3;
+}
+.start_screen_button a {
+  color: #292929;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 6%;
+  line-height: 130%;
 }
 
 .start_text {
@@ -216,13 +224,8 @@ h4 {
   margin-bottom: 25px;
 }
 
-.button_primary {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  letter-spacing: 6%;
-  font-size: 17px;
-  color: #292929;
-  line-height: 130%;
+.button_primary  {
+  
   padding: 15px 45px;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
@@ -230,6 +233,15 @@ h4 {
   margin: 60px auto;
   justify-content: center;
   display: flex;
+  cursor: pointer;
+}
+.button_primary a {
+  color: #292929;
+   font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 17px;
+  line-height: 130%;
 }
 
 .slider_arrow {
@@ -301,6 +313,7 @@ h5 {
   margin-bottom: 20px;
   width: 349px;
   border-radius: 9px;
+  cursor: pointer;
 }
 
 .donation_text {
@@ -368,6 +381,14 @@ footer h5 {
   justify-content: start;
   align-items: center;
 }
+h5 a {
+  color: #f1cdb3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 20px;
+  line-height: 115%;
+}
 
 .footer_locations_place {
   display: flex;
@@ -376,23 +397,23 @@ footer h5 {
   
 }
 .footer_contacts_title {
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 .footer_locations_title {
   padding-bottom: 34px;
 }
 .footer_locations_place {
-  padding-bottom: 31px;
+  padding-bottom: 28px;
 }
 .footer_contacts_email {
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 .footer_locations {
   padding-right: 6px;
   padding-top: 21px;
 }
 .footer_h5 {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 .footer_central {
   padding-left: 20px;
