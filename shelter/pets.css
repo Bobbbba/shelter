@@ -42,13 +42,16 @@ a {
   line-height: 160%;
 }
 
-.logo h1 {
+.logo h1>a  {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 6%;
   line-height: 110%;
-  padding-bottom: 10px;
+  
+}
+.logo h1 {
+    padding-bottom: 10px;
 }
 
 .logo p {
@@ -239,3 +242,4 @@ h3 {
  
   color: #292929;
 }
+/* href="pets.html#pets" */
