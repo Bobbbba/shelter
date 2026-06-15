@@ -117,7 +117,7 @@ h2 {
 .card_img {
   padding-bottom: 30px;
 }
-h4 {
+ .card h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   letter-spacing: 6%;
