@@ -162,26 +162,61 @@ h4 {
   padding-top: 64px;
 }
 .button_paginator_inactive {
-  padding: 15px;
-  border: 2px solid #cdcdcd;
-  border-radius: 55px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: default;
+
+   border: 2px solid #cdcdcd;
 }
 .button_paginator_active {
-  padding: 15px;
-  border: 2px solid #f1cdb3;
-  border-radius: 50px;
-  background: #f1cdb3;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #f1cdb3;
+    background: #f1cdb3;
+    cursor: default;
 }
 .button_paginator_next {
-  padding: 15px;
-  border: 2px solid #f1cdb3;
-  border-radius: 50px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #f1cdb3;
+    cursor: pointer;
+    transition: all 0.8s ease;
 }
 .button_paginator_all {
-  padding: 15px;
-  border: 2px solid #f1cdb3;
-  border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #f1cdb3;
+    cursor: pointer;
+    transition: all 0.8s ease;
 }
+ .button_paginator_next:hover  {
+     background: #f1cdb3;
+ }
+   .button_paginator_all:hover{
+     background: #f1cdb3;
+ }
+
 .into {
   background:
     url(assets/noise_transparent@2x.png),
