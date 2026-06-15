@@ -335,7 +335,15 @@ footer h5 {
   justify-content: start;
   align-items: center;
 }
-h5 a {
+.footer_locations_place a {
+  color: #f1cdb3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 20px;
+  line-height: 115%;
+}
+.footer_contacts_email a {
   color: #f1cdb3;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
@@ -348,7 +356,11 @@ h5 a {
   display: flex;
   justify-content: start;
   align-items: center;
+  
 }
+
+
+
 .footer_contacts_title {
   padding-bottom: 36px;
 }
