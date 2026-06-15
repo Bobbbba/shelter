@@ -9,7 +9,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0px auto;
-  padding: 30px 0 91.7px 0;
+  padding: 30px 0 10px 0;
   color: #545454;
 }
 
@@ -42,16 +42,15 @@ a {
   line-height: 160%;
 }
 
-.logo h1>a  {
+.logo h1 > a {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 6%;
   line-height: 110%;
-  
 }
 .logo h1 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .logo p {
@@ -72,24 +71,29 @@ h3 {
   color: #545454;
   text-align: center;
 }
+.pets {
+    background-color: #f6f6f6;
+
+}
 .pets_container {
-    margin: 0 auto;
-    max-width: 1200px;
-    margin-top: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 20px;
 }
 .card_container {
   display: flex;
   justify-content: center;
-  gap:  30px 40px;
+  gap: 30px 40px;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 0px;
+  background-color: #fafafa;
+  cursor: pointer;
 }
 .card_img {
   padding-bottom: 30px;
@@ -115,37 +119,44 @@ h4 {
   border-radius: 100px;
   margin-bottom: 25px;
 }
+
+.card:hover {
+  .slider_button {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+}
 .pets_title {
-    padding-bottom: 55px;
+  padding-bottom: 55px;
+  padding-top: 82px;
 }
 .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-bottom: 100px;
-    padding-top: 64px;
-    
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 98px;
+  padding-top: 64px;
 }
 .button_paginator_inactive {
-    padding: 15px;
-    border: 2px solid #cdcdcd;
-    border-radius: 55px 50px;
+  padding: 15px;
+  border: 2px solid #cdcdcd;
+  border-radius: 55px 50px;
 }
 .button_paginator_active {
-    padding: 15px;
-    border: 2px solid #f1cdb3;
-    border-radius: 50px;
-    background: #f1cdb3;
+  padding: 15px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50px;
+  background: #f1cdb3;
 }
 .button_paginator_next {
-    padding: 15px;
-    border: 2px solid #f1cdb3;;
-    border-radius: 50px;
+  padding: 15px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50px;
 }
 .button_paginator_all {
-    padding: 15px;
-    border: 2px solid #f1cdb3;;
-    border-radius: 50px;
+  padding: 15px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50px;
 }
 .into {
   background:
@@ -183,10 +194,9 @@ footer h5 {
   display: flex;
   justify-content: start;
   align-items: center;
-  
 }
 .footer_contacts_title {
-    align-items: start;
+  align-items: start;
   padding-bottom: 40px;
 }
 .footer_locations_title {
@@ -209,7 +219,7 @@ footer h5 {
   padding-left: 20px;
 }
 .footer_contacts {
-padding-top: 21px;
+  padding-top: 21px;
 }
 h5 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -229,17 +239,15 @@ h3 {
   text-align: center;
 }
 .footer_contacts_title {
-    text-align: start;
+  text-align: start;
 }
 .footer_locations_title {
-    text-align: start;
+  text-align: start;
 }
-.first  {
+.first {
   border-bottom: 3px solid #f1cdb3;
-  
 }
 .first a {
- 
   color: #292929;
 }
 /* href="pets.html#pets" */

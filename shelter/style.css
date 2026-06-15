@@ -30,8 +30,10 @@
   align-content: center;
 }
 
-.first {
+.first a {
   border-bottom: 3px solid #f1cdb3;
+  cursor: default;
+  color: #fafafa;
 }
 
 .ul_menu li {
@@ -48,6 +50,19 @@ a {
   letter-spacing: 0px;
   line-height: 160%;
 }
+a:hover {
+  color: #fafafa;
+}
+.footer_contacts_email  {
+  a:hover {
+  color: #f1cdb3;
+  }
+}
+.footer_locations {
+  a:hover {
+  color: #f1cdb3;
+  }
+}
 
 .logo h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -58,7 +73,7 @@ a {
   padding-bottom: 10px;
 }
 .logo {
-  cursor: pointer;
+  cursor: default;
 }
 
 .logo p {
@@ -108,21 +123,19 @@ a {
 .start_screen_button {
   padding: 15px 45px;
   cursor: pointer;
- 
-  
-  
+
   border-radius: 100px;
   margin-bottom: 40px;
   background-color: #f1cdb3;
 }
-.start_screen_button  {
+.start_screen_button {
   color: #292929;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   font-size: 17px;
   letter-spacing: 6%;
   line-height: 130%;
-   padding: 15px 45px;
+  padding: 15px 45px;
 }
 .start_screen_button:hover {
   background-color: #fddcc4;
@@ -189,10 +202,14 @@ h3 {
   gap: 90px;
   align-items: center;
 }
+.pets {
+  background-color: #f6f6f6;
+}
 
 .pets_container {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #f6f6f6;
 }
 
 .card {
@@ -200,6 +217,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 0px;
+  transition:
+    background-color 2s,
+    box-shadow 2s;
+  cursor: pointer;
+  background-color: #fafafa;
+  cursor: pointer;
+  /* transition: transform 1s; */
 }
 
 h4 {
@@ -228,22 +252,33 @@ h4 {
   border-radius: 100px;
   margin-bottom: 25px;
 }
+.card:hover {
+ 
+  box-shadow:  0px 5px 5px 5px rgba(0, 0, 0, 0.3); transition: transform 1s; ;
+  transition: transform 1s;
+  .slider_button {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+}
+.button_pets {
+  display: flex;
+}
 
-.button_primary  {
-  
+.button_primary {
   padding: 15px 45px;
-  /* border: 2px solid #f1cdb3; */
+
   border-radius: 100px;
   text-align: center;
-  margin: 60px auto;
-  justify-content: center;
-  display: flex;
+  margin: 62px auto 100px;
+
   cursor: pointer;
+
   background-color: #f1cdb3;
 }
 .button_primary a {
   color: #292929;
-   font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   letter-spacing: 6%;
   font-size: 17px;
@@ -265,7 +300,7 @@ h4 {
 }
 
 .help_title {
-  padding-top: 118px;
+  padding-top: 80px;
   text-align: center;
   padding-bottom: 60px;
 }
@@ -298,6 +333,9 @@ h5 {
   font-size: 20px;
   color: #545454;
   line-height: 115%;
+}
+.donation {
+  background-color: #f6f6f6;
 }
 
 .donation_container {
@@ -364,7 +402,6 @@ h6 {
   padding-bottom: 20px;
 }
 
-
 .footer_container {
   margin: 0 auto;
   max-width: 1200px;
@@ -404,7 +441,6 @@ h5 a {
   display: flex;
   justify-content: start;
   align-items: center;
-  
 }
 .footer_contacts_title {
   padding-bottom: 36px;
@@ -429,5 +465,5 @@ h5 a {
   padding-left: 20px;
 }
 .footer_contacts {
-padding-top: 21px;
+  padding-top: 21px;
 }
