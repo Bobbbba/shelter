@@ -75,9 +75,14 @@ a:hover {
   letter-spacing: 6%;
   line-height: 110%;
   padding-bottom: 10px;
+  transition: all 0.8s ease;
 }
+.logo h1:hover {
+  color: #f6f6f6;
+}
+
 .logo {
-  cursor: default;
+  cursor: pointer
 }
 
 .logo p {
@@ -88,6 +93,10 @@ a:hover {
   letter-spacing: 10%;
   line-height: 100%;
   padding-left: 4px;
+  transition: all 0.8s ease;
+}
+.logo p:hover {
+  color: #f6f6f6;
 }
 
 .start_screen_container {
@@ -127,7 +136,7 @@ a:hover {
 .start_screen_button {
   padding: 15px 45px;
   cursor: pointer;
-
+  transition: all 0.8s ease;
   border-radius: 100px;
   margin-bottom: 40px;
   background-color: #f1cdb3;
@@ -139,7 +148,7 @@ a:hover {
   font-size: 17px;
   letter-spacing: 6%;
   line-height: 130%;
-  padding: 15px 45px;
+  
 }
 .start_screen_button:hover {
   background-color: #fddcc4;
@@ -260,7 +269,7 @@ h4 {
 }
 .card:hover {
  
-  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.08);
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.1);
   transition: all 0.8s ease;
   .slider_button {
     background-color: #fddcc4;
@@ -273,7 +282,7 @@ h4 {
 
 .button_primary {
   padding: 15px 45px;
-
+  transition: all 0.8s ease;
   border-radius: 100px;
   text-align: center;
   margin: 62px auto 100px;
@@ -289,6 +298,7 @@ h4 {
   letter-spacing: 6%;
   font-size: 17px;
   line-height: 130%;
+  
 }
 .button_primary:hover {
   background-color: #fddcc4;
@@ -362,12 +372,15 @@ h5 {
 .credit_card_content {
   display: flex;
   background-color: #f1cdb3;
-  /* justify-content: space-between; */
   padding: 10px 5px 10px 15px;
   margin-bottom: 20px;
   width: 349px;
   border-radius: 9px;
   cursor: pointer;
+  transition: all 0.8s ease;
+}
+.credit_card_content:hover {
+  background-color: #fddcc4;
 }
 
 .donation_text {
