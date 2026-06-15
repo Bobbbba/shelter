@@ -69,11 +69,11 @@ a {
   padding-left: 4px;
   cursor: pointer;
 }
-.logo h1>a:hover {
-    color: #292929;
+.logo h1 > a:hover {
+  color: #292929;
 }
 .logo p:hover {
-    color: #292929;
+  color: #292929;
 }
 li a:hover {
   color: #292929;
@@ -88,8 +88,7 @@ h3 {
   text-align: center;
 }
 .pets {
-    background-color: #f6f6f6;
-
+  background-color: #f6f6f6;
 }
 .pets_container {
   margin: 0 auto;
@@ -142,8 +141,7 @@ h4 {
 }
 
 .card:hover {
- 
-   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.1);
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.1);
   transition: all 0.8s ease;
   .slider_button {
     background-color: #fddcc4;
@@ -162,60 +160,60 @@ h4 {
   padding-top: 64px;
 }
 .button_paginator_inactive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52px;
-    height: 52px;
-    padding: 0;
-    border-radius: 50%;
-    cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: default;
 
-   border: 2px solid #cdcdcd;
+  border: 2px solid #cdcdcd;
 }
 .button_paginator_active {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52px;
-    height: 52px;
-    padding: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid #f1cdb3;
-    background: #f1cdb3;
-    cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #f1cdb3;
+  background: #f1cdb3;
+  cursor: default;
 }
 .button_paginator_next {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52px;
-    height: 52px;
-    padding: 0;
-    border-radius: 50%;
-    border: 2px solid #f1cdb3;
-    cursor: pointer;
-    transition: all 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+  transition: all 0.8s ease;
 }
 .button_paginator_all {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52px;
-    height: 52px;
-    padding: 0;
-    border-radius: 50%;
-    border: 2px solid #f1cdb3;
-    cursor: pointer;
-    transition: all 0.8s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+  transition: all 0.8s ease;
 }
- .button_paginator_next:hover  {
-     background: #f1cdb3;
- }
-   .button_paginator_all:hover{
-     background: #f1cdb3;
- }
+.button_paginator_next:hover {
+  background: #f1cdb3;
+}
+.button_paginator_all:hover {
+  background: #f1cdb3;
+}
 
 .into {
   background:
@@ -311,7 +309,6 @@ h3 {
   cursor: default;
 }
 
-
 .footer_container {
   margin: 0 auto;
   max-width: 1200px;
@@ -378,13 +375,13 @@ h5 a {
   padding-top: 21px;
 }
 
-.footer_contacts_email  {
+.footer_contacts_email {
   a {
-  color: #f1cdb3;
+    color: #f1cdb3;
   }
 }
 .footer_locations {
   a {
-  color: #f1cdb3;
+    color: #f1cdb3;
   }
 }
