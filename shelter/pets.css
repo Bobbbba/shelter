@@ -56,6 +56,7 @@ a {
 }
 .logo h1 {
   padding-bottom: 10px;
+  color: #545454;
 }
 
 .logo p {
@@ -272,6 +273,7 @@ h3 {
 }
 .first a {
   color: #292929;
+  cursor: default;
 }
 
 
