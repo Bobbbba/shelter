@@ -94,6 +94,7 @@ h3 {
   padding-bottom: 0px;
   background-color: #fafafa;
   cursor: pointer;
+  border-radius: 9px;
   transition:
     background-color 2s,
     box-shadow 2s;
