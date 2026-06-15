@@ -57,14 +57,14 @@ a {
 a:hover {
   color: #fafafa;
 }
-.footer_contacts_email  {
+.footer_contacts_email {
   a:hover {
-  color: #f1cdb3;
+    color: #f1cdb3;
   }
 }
 .footer_locations {
   a:hover {
-  color: #f1cdb3;
+    color: #f1cdb3;
   }
 }
 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .logo {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .logo p {
@@ -148,10 +148,10 @@ a:hover {
   font-size: 17px;
   letter-spacing: 6%;
   line-height: 130%;
-  
 }
 .start_screen_button:hover {
   background-color: #fddcc4;
+  color: #292929;
 }
 
 .start_text {
@@ -207,7 +207,7 @@ h3 {
   padding: 20px 16px;
   border: 2px solid #f1cdb3;
   border-radius: 50px;
-  cursor:pointer;
+  cursor: pointer;
   transition: all 0.8s ease;
 }
 .arrow-left:hover {
@@ -236,14 +236,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 0px;
-    border-radius: 9px;
+  border-radius: 9px;
   transition:
     background-color 2s,
     box-shadow 2s;
   cursor: pointer;
   background-color: #fafafa;
   cursor: pointer;
-  
 }
 
 h4 {
@@ -274,7 +273,6 @@ h4 {
   transition: all 0.8s ease;
 }
 .card:hover {
- 
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.1);
   transition: all 0.8s ease;
   .slider_button {
@@ -304,7 +302,6 @@ h4 {
   letter-spacing: 6%;
   font-size: 17px;
   line-height: 130%;
-  
 }
 .button_primary:hover {
   background-color: #fddcc4;
