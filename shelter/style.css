@@ -284,6 +284,15 @@ h4 {
     border: 2px solid #fddcc4;
   }
 }
+.card:active {
+
+  .slider_button {
+   background-color: #fafafa;
+    border: 2px solid #fddcc4;
+    transform: translateY(2px);
+     transition: all 0.1s ease;
+  }
+}
 .button_pets {
   display: flex;
 }
