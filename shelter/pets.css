@@ -142,10 +142,19 @@ h2 {
 
 .card:hover {
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.1);
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
   .slider_button {
     background-color: #fddcc4;
     border: 2px solid #fddcc4;
+  }
+}
+.card:active {
+
+  .slider_button {
+   background-color: #fafafa;
+    border: 2px solid #fddcc4;
+    transform: translateY(2px);
+     transition: all 0.1s ease;
   }
 }
 .pets_title {
