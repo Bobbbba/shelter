@@ -95,6 +95,9 @@ h2 {
   max-width: 1200px;
   margin-top: 20px;
 }
+.our_friends {
+  background-color: #f6f6f6;
+}
 .card_container {
   display: flex;
   justify-content: center;
