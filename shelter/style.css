@@ -613,3 +613,7 @@ footer h5 {
     color: #f1cdb3;
   }
 }
+
+@media (max-width: 768px) {
+  
+}
