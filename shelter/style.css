@@ -104,7 +104,8 @@ a:hover {
   align-items: center;
   max-width: 1200px;
   margin: 0px auto;
-  align-items: center;
+  
+  
 }
 
 .start_screen_images {
@@ -614,6 +615,64 @@ footer h5 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
+.start_screen_container {
+  flex-direction: column;
+  text-align:start;
+  /* max-width: 569px; */
+ 
+}
+.header_container {
+  max-width: 708px;
+  padding: 30px 0 62px 0;
   
+}
+.start_screen_button {
+  margin-left: 125px;
+}
+.start_screen_images img{
+align-content: end;
+ }
+ .start_screen_text {
+  padding-bottom: 56px;
+ }
+.about_container {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.third_card {
+  display: none;
+}
+.donation_container {
+  flex-direction: column;
+  align-items: center;
+}
+.card_container {
+  gap: 20px;
+}
+.slider_arrow {
+  gap: 12px;
+  justify-content: space-around;
+}
+.help_list {
+gap: 55px 80px;
+max-height: 449px;
+}
+.help_container {
+  max-width: 669px;
+}
+.footer_content {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.start_screen_images {
+  display: flex;
+  justify-content: end;
+  padding-left: 3px;
+  align-items: center;
+ 
+}
+.start_screen_images img{
+  width: 82%;
+}
 }
