@@ -639,31 +639,41 @@ align-content: end;
 .about_container {
   flex-direction: column-reverse;
   align-items: center;
+  gap: 78px;
 }
 .third_card {
   display: none;
 }
 .donation_container {
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+  padding-bottom: 96px;
 }
 .card_container {
-  gap: 20px;
+  gap: 40px;
 }
 .slider_arrow {
   gap: 12px;
-  justify-content: space-around;
+  justify-content:center;
 }
 .help_list {
-gap: 55px 80px;
+gap: 28px 80px;
+margin-bottom: 0px;
 max-height: 449px;
+max-width: 600px ;
+justify-content: space-between;
 }
 .help_container {
   max-width: 669px;
+  margin-bottom: 100px;
 }
 .footer_content {
   flex-wrap: wrap;
   justify-content: center;
+  gap: 27px 59px;
+  padding-top: 15px;
+  ;
+  
 }
 .start_screen_images {
   display: flex;
@@ -674,5 +684,35 @@ max-height: 449px;
 }
 .start_screen_images img{
   width: 82%;
+}
+.about-title {
+  padding-top: 0px;
+}
+.donation_content {
+  padding-left: 0px;
+  padding-bottom: 50px;
+}
+.footer_contacts {
+  padding-top: 0px;
+}
+.footer_locations {
+  padding-top: 0px;
+}
+.footer_locations_title {
+    padding-bottom: 32px;
+}
+.footer_locations_place {
+    padding-bottom: 30px;
+}
+.footer_contacts_email {
+    padding-bottom: 35px;
+}
+.footer_puppy {
+  margin-bottom: 0px;
+}
+
+
+.second {
+  padding-bottom: 30px;
 }
 }
