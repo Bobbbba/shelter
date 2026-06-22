@@ -495,7 +495,7 @@ footer h5 {
   .burger_menu_span {
     width: 30px;
     height: 2px;
-    background-color: #f1cdb3;
+    background-color: #000000;
   }
 }
 @media (max-width: 695px) {
