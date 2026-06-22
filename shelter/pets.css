@@ -25,6 +25,9 @@ html {
 .menu {
   align-content: center;
 }
+.burger_menu {
+  display: none;
+}
 
 .first {
   border-bottom: 3px solid #f1cdb3;
@@ -120,7 +123,7 @@ h2 {
 .card_img {
   padding-bottom: 30px;
 }
- .card h3 {
+.card h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
   letter-spacing: 6%;
@@ -152,12 +155,11 @@ h2 {
   }
 }
 .card:active {
-
   .slider_button {
-   background-color: #fafafa;
+    background-color: #fafafa;
     border: 2px solid #fddcc4;
     transform: translateY(2px);
-     transition: all 0.1s ease;
+    transition: all 0.1s ease;
   }
 }
 .pets_title {
@@ -347,6 +349,19 @@ footer h5 {
   justify-content: start;
   align-items: center;
 }
+  .footer_contacts_tell {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+.footer_contacts_tell a {
+  color: #f1cdb3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 6%;
+  font-size: 20px;
+  line-height: 115%;
+}
 .footer_locations_place a {
   color: #f1cdb3;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -368,10 +383,7 @@ footer h5 {
   display: flex;
   justify-content: start;
   align-items: center;
-  
 }
-
-
 
 .footer_contacts_title {
   padding-bottom: 36px;
@@ -383,7 +395,7 @@ footer h5 {
   padding-bottom: 28px;
 }
 .footer_contacts_email {
-  padding-bottom: 33px;
+  padding-bottom: 35px;
 }
 .footer_locations {
   padding-right: 6px;
@@ -407,5 +419,179 @@ footer h5 {
 .footer_locations {
   a {
     color: #f1cdb3;
+  }
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .header_container {
+    max-width: 708px;
+    padding: 30px 0 8px 0;
+  }
+  .second_card {
+    display: none;
+  }
+  .navigation {
+    padding-bottom: 77px;
+    padding-top: 42px;
+  }
+
+  .card_container {
+    gap: 30px 40px;
+  }
+  .slider_arrow {
+    gap: 12px;
+    justify-content: center;
+  }
+  .pets_title {
+    padding-bottom: 26px;
+    padding-top: 82px;
+  }
+
+  .footer_content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px 59px;
+    padding-top: 15px;
+  }
+
+  .footer_contacts {
+    padding-top: 0px;
+  }
+  .footer_locations {
+    padding-top: 0px;
+  }
+  .footer_locations_title {
+    padding-bottom: 32px;
+  }
+  .footer_locations_place {
+    padding-bottom: 30px;
+  }
+  .footer_contacts_email {
+    padding-bottom: 35px;
+  }
+  .footer_contacts_tell {
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+  .footer_puppy {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .menu {
+    display: none;
+  }
+  .burger_menu_span {
+    width: 30px;
+    height: 2px;
+    background-color: #f1cdb3;
+  }
+}
+@media (max-width: 695px) {
+  .header_container {
+    max-width: 88%;
+  }
+
+  .slider_arrow {
+    gap: 0px;
+  }
+  .navigation {
+    padding-bottom: 45px;
+    padding-top: 42px;
+    gap: 10px;
+  }
+  .third_card {
+    display: none;
+  }
+  .pets_title {
+    font-size: 25px;
+    padding-bottom: 42px;
+    padding-top: 43px;
+  }
+  .card_img {
+    padding-bottom: 29px;
+  }
+
+  .slider_arrow {
+    flex-wrap: wrap;
+    gap: 13px 83px;
+  }
+  .button_primary {
+    margin: 40px auto 45px;
+  }
+  .card_container {
+    width: 100%;
+    order: -1;
+  }
+
+  h4 {
+    letter-spacing: 6%;
+    font-size: 15px;
+
+    line-height: 110%;
+    padding-bottom: 30px;
+  }
+
+  h3 {
+    font-weight: 400;
+    letter-spacing: 6%;
+    font-size: 25px;
+    line-height: 130%;
+    color: #545454;
+  }
+
+  .footer_contacts_title {
+    text-align: center;
+  }
+  .footer_locations_title {
+    text-align: center;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: inline;
+  }
+  .footer_contacts {
+    margin: 0 34px;
+  }
+  .tell {
+    padding-left: 27px;
+    padding-bottom: 5px;
+  }
+  .footer_contacts_tell {
+    padding-bottom: 7px;
+  }
+  .footer_locations_title {
+    padding-bottom: 40px;
+  }
+
+  .second {
+    padding-bottom: 37px;
+  }
+  .second_two {
+    padding-bottom: 11px;
+  }
+  .footer_puppy img {
+    width: 88%;
+    padding-left: 25px;
+  }
+  .footer_contacts_email {
+    padding-bottom: 38px;
+  }
+  .footer_locations {
+    padding-top: 0px;
+    padding-right: 0px;
   }
 }
