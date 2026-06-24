@@ -690,7 +690,7 @@ footer h5 {
     /* margin-bottom: 100px; */
     /* max-height: 449px;
     max-width: 600px; */
-   margin-bottom: 99px;
+    margin-bottom: 99px;
   }
   .help_list_item {
     width: 170px;
@@ -698,9 +698,8 @@ footer h5 {
     gap: 30px;
   }
   .help_title {
-    
     padding-bottom: 59px;
-}
+  }
   .footer_content {
     flex-wrap: wrap;
     justify-content: center;
@@ -755,19 +754,67 @@ footer h5 {
 
 @media (max-width: 767px) {
   .burger_menu {
+    width: 30px;
+    height: 22px;
+    border: none;
+    background-color: #262425;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
+    z-index: 1;
   }
   .menu {
-    display: none;
+    display: flex;
+    position: absolute;
+    right: -320px;
+    top: 0;
+    background-color: #292929;
+    padding: 248px 39px 248px 39px;
+    transition: transform 0.8s;    
+  }
+  .ul_menu {
+   flex-direction: column;
+    gap: 40px;
+   
+    
   }
   .burger_menu_span {
     width: 30px;
     height: 2px;
     background-color: #f1cdb3;
+    transition: transform .8s;
   }
+  a {
+    font-size: 32px;
+    text-align: center;
+  }
+  .ul_menu li {
+    display: flex;
+    
+    justify-content: center;
+}
+.header.open .menu {
+  transform: translateX(-100%);
+}
+.header.open .burger_menu {
+  gap: 10px;
+   background-color: #292929;
+}
+
+.header.open .burger_menu_span:nth-child(1) {
+  transform: translateX(10px) translateY(29px) rotate(90deg);
+  height: 3px;
+}
+.header.open .burger_menu_span:nth-child(2) {
+  transform:  translateY(18px) rotate(90deg);
+  height: 3px;
+}
+.header.open .burger_menu_span:nth-child(3) {
+  transform: translateX(-10px)translateY(8px) rotate(90deg);
+  height: 3px;
+}
+
 }
 @media (max-width: 695px) {
   .second_card {
@@ -903,8 +950,7 @@ footer h5 {
     padding-bottom: 20px;
     text-align: center;
   }
-    .pets_name {
-   
+  .pets_name {
     font-size: 20px;
     color: #545454;
     line-height: 160%;
@@ -979,11 +1025,11 @@ footer h5 {
     width: 88%;
     padding-left: 25px;
   }
-      .footer_contacts_email {
-        padding-bottom: 38px;
-    }
-    .footer_locations {
-        padding-top: 0px;
-        padding-right: 0px;
-    }
+  .footer_contacts_email {
+    padding-bottom: 38px;
+  }
+  .footer_locations {
+    padding-top: 0px;
+    padding-right: 0px;
+  }
 }
