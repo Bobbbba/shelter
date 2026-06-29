@@ -8,15 +8,7 @@ const burgerMenu = document.querySelector(".menu");
 const burgerLi = burgerMenu.querySelectorAll('li');
 const overlay = document.querySelector('.overlay');
 const body = document.querySelector('body');
-// document.addEventListener("DOMContentLoaded", function () {
-//   burgerButton.addEventListener("click", function () {
-//     burgerMenu.classList.toggle("open")
-//     burgerButton.classList.toggle("open")
-//     overlay.classList.toggle("overlay_open")
-//     document.body.classList.toggle("no-scroll") = 'hidden';
-    
-//  })
-// })
+
 burgerButton.addEventListener('click', () => {
   if (burgerButton.classList.contains('open')) {
     closeBurger();
