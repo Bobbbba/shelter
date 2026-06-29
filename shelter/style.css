@@ -775,7 +775,7 @@ footer h5 {
   }
   .menu {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: -320px;
     top: 0;
     height: 100vh;
