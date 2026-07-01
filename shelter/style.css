@@ -254,6 +254,7 @@ h3 {
   justify-content: center;
   gap: 90px;
   align-items: center;
+  
 }
 .pets {
   background-color: #f6f6f6;
@@ -321,7 +322,7 @@ h4 {
     background-color: #fafafa;
     border: 2px solid #fddcc4;
     transform: translateY(2px);
-    transition: all 0.1s ease;
+    transition: all 0.8s ease;
   }
 }
 .button_pets {
@@ -1081,20 +1082,25 @@ footer h5 {
 @keyframes moveRight {
   from {
       left: -108%;
+      transition: all 0.8s ease-out;
   }
 
   to {
       left: 0;
+      transition: all 0.8s ease-out;
   }
+  
 }
 
 .move-to-left {
   animation-name: moveLeft;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
+  transition: transform 0.5s ease-in-out;
 }
 
 .move-to-right {
   animation-name: moveRight;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
+  transition: transform 0.5s ease-in-out;
 }
 

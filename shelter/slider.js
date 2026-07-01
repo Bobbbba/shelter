@@ -2,10 +2,10 @@ import data from './pets_json.js';
 
 
 
-const sliderWrapper = document.querySelector('.card_container'); //slider
+const cardContainer = document.querySelector('.card_container'); //slider
 let arrRandomId = [];
-const arrowLeft = document.querySelector('.arrow-left'); //arrow-left
-const arrowRight = document.querySelector('.arrow-right'); //arrow-right
+const arrowLeft = document.querySelector('.btn-left'); 
+const arrowRight = document.querySelector('.btn-right'); 
 let windowWidth = 0;
 
 let prevElements = [];
@@ -29,14 +29,14 @@ arrowRight.addEventListener('click', (e) => {
     
 });
 
-sliderWrapper.addEventListener('animationend', () => {
+cardContainer.addEventListener('animationend', () => {
     changeItems();
 })
 
 function moveSlider(card) {
     if (document.body.clientWidth > 768) {
-        if (card.classList.contains('arrow-right')) {
-            sliderWrapper.classList.add('move-to-right');
+        if (card.classList.contains('btn-right')) {
+            cardContainer.classList.add('move-to-right');
             
             arrRandomId = ['', '', '', prevElements[0], prevElements[1], prevElements[2], currentElements[0], currentElements[1], currentElements[2]];
             
@@ -50,8 +50,8 @@ function moveSlider(card) {
             prevElements = [arrRandomId[0], arrRandomId[1], arrRandomId[2]];
             currentElements = [arrRandomId[3], arrRandomId[4], arrRandomId[5]];
             nextElements = [arrRandomId[6], arrRandomId[7], arrRandomId[8]];
-        } else if (card.classList.contains('arrow-left')) {
-            sliderWrapper.classList.add('move-to-left');
+        } else if (card.classList.contains('btn-left')) {
+            cardContainer.classList.add('move-to-left');
              
             arrRandomId = [currentElements[0], currentElements[1], currentElements[2], nextElements[0], nextElements[1], nextElements[2]];
            
@@ -66,8 +66,8 @@ function moveSlider(card) {
         }
          
     } else if (document.body.clientWidth > 638) {
-        if (card.classList.contains('arrow-right')) {
-            sliderWrapper.classList.add('move-to-right');
+        if (card.classList.contains('btn-right')) {
+            cardContainer.classList.add('move-to-right');
 
             arrRandomId = ['', '', prevElements[0], prevElements[1], currentElements[0], currentElements[1]];
 
@@ -77,8 +77,8 @@ function moveSlider(card) {
             prevElements = [arrRandomId[0], arrRandomId[1]];
             currentElements = [arrRandomId[2], arrRandomId[3]];
             nextElements = [arrRandomId[4], arrRandomId[5]];
-        } else if (card.classList.contains('arrow-left')) {
-            sliderWrapper.classList.add('move-to-left');
+        } else if (card.classList.contains('btn-left')) {
+            cardContainer.classList.add('move-to-left');
 
             arrRandomId = [currentElements[0], currentElements[1], nextElements[0], nextElements[1]];
 
@@ -90,8 +90,8 @@ function moveSlider(card) {
             nextElements = [arrRandomId[4], arrRandomId[5]];
         }
     } else {
-        if (card.classList.contains('arrow-right')) {
-            sliderWrapper.classList.add('move-to-right');
+        if (card.classList.contains('btn-right')) {
+            cardContainer.classList.add('move-to-right');
 
             arrRandomId = ['', prevElements[0], currentElements[0]];
 
@@ -100,8 +100,8 @@ function moveSlider(card) {
             prevElements = [arrRandomId[0]];
             currentElements = [arrRandomId[1]];
             nextElements = [arrRandomId[2]];
-        } else if (card.classList.contains('arrow-left')) {
-            sliderWrapper.classList.add('move-to-left');
+        } else if (card.classList.contains('btn-left')) {
+            cardContainer.classList.add('move-to-left');
 
             arrRandomId = [currentElements[0], nextElements[0]];
 
@@ -117,11 +117,11 @@ function moveSlider(card) {
 
 function changeItems() {
     if (document.body.clientWidth > 768) {
-        if (sliderWrapper.classList.contains('move-to-left')) {
-            sliderWrapper.classList.remove('move-to-left');
+        if (cardContainer.classList.contains('move-to-left')) {
+            cardContainer.classList.remove('move-to-left');
         
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 9; i++) {
                 addElement(arrRandomId[i]);
@@ -129,10 +129,10 @@ function changeItems() {
             arrRandomId = [];
         }
 
-        if (sliderWrapper.classList.contains('move-to-right')) {
-            sliderWrapper.classList.remove('move-to-right');
+        if (cardContainer.classList.contains('move-to-right')) {
+            cardContainer.classList.remove('move-to-right');
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 9; i++) {
                 addElement(arrRandomId[i]);
@@ -140,10 +140,10 @@ function changeItems() {
             arrRandomId = [];
         }
     } else if (document.body.clientWidth > 638) {
-        if (sliderWrapper.classList.contains('move-to-left')) {
-            sliderWrapper.classList.remove('move-to-left');
+        if (cardContainer.classList.contains('move-to-left')) {
+            cardContainer.classList.remove('move-to-left');
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 6; i++) {
                 addElement(arrRandomId[i]);
@@ -151,10 +151,10 @@ function changeItems() {
             arrRandomId = [];
         }
 
-        if (sliderWrapper.classList.contains('move-to-right')) {
-            sliderWrapper.classList.remove('move-to-right');
+        if (cardContainer.classList.contains('move-to-right')) {
+            cardContainer.classList.remove('move-to-right');
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 6; i++) {
                 addElement(arrRandomId[i]);
@@ -162,10 +162,10 @@ function changeItems() {
             arrRandomId = [];
         }
     } else {
-        if (sliderWrapper.classList.contains('move-to-left')) {
-            sliderWrapper.classList.remove('move-to-left');
+        if (cardContainer.classList.contains('move-to-left')) {
+            cardContainer.classList.remove('move-to-left');
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 3; i++) {
                 addElement(arrRandomId[i]);
@@ -173,10 +173,10 @@ function changeItems() {
             arrRandomId = [];
         }
 
-        if (sliderWrapper.classList.contains('move-to-right')) {
-            sliderWrapper.classList.remove('move-to-right');
+        if (cardContainer.classList.contains('move-to-right')) {
+            cardContainer.classList.remove('move-to-right');
 
-            sliderWrapper.innerHTML = '';
+            cardContainer.innerHTML = '';
 
             for (let i = 0; i < 3; i++) {
                 addElement(arrRandomId[i]);
@@ -211,14 +211,14 @@ function addElement(idOfElement) {
                 `
     
     
-    sliderWrapper.append(card);
+    cardContainer.append(card);
 }
 
 function initSlider() {
 
     if ((document.body.clientWidth > 768) && (windowWidth <= 768)) {
         windowWidth = document.body.clientWidth;
-        sliderWrapper.innerHTML = '';
+        cardContainer.innerHTML = '';
         for (let i = 0; i < 8; i++) {
             arrRandomId[i] = setRandomId(arrRandomId, 8);
         }
@@ -236,7 +236,7 @@ function initSlider() {
         arrRandomId = [];
 
     } else if ((document.body.clientWidth > 638 && document.body.clientWidth <= 768) && (windowWidth > 768 || windowWidth < 639)) {
-        sliderWrapper.innerHTML = '';
+        cardContainer.innerHTML = '';
         windowWidth = document.body.clientWidth;
         for (let i = 0; i < 6; i++) {
             arrRandomId[i] = setRandomId(arrRandomId, 8);
@@ -254,7 +254,7 @@ function initSlider() {
         arrRandomId = [];
     } else if ((document.body.clientWidth <= 638 && document.body.clientWidth >= 320) && (windowWidth > 638 || windowWidth < 320)) {
         windowWidth = document.body.clientWidth;
-        sliderWrapper.innerHTML = '';
+        cardContainer.innerHTML = '';
         for (let i = 0; i < 3; i++) {
             arrRandomId[i] = setRandomId(arrRandomId, 8);
         }
