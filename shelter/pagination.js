@@ -1,7 +1,7 @@
 import data from './pets_json.js';
 window.addEventListener('DOMContentLoaded', () => {
 
-    const petsWrapper = document.querySelector('.card_container');
+    const cardContainer = document.querySelector('.card_container');
     const numberPage = document.querySelector('.button_paginator_active');
     const arrowStart = document.querySelector('.button_paginator_inactive_two');
     const arrowEnd = document.querySelector('.button_paginator_all');
@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (document.body.clientWidth > 768) {
             if (activePage != arrItems.length) {
                 activePage = arrItems.length;
-                petsWrapper.classList.add('disappearance');
+                cardContainer.classList.add('disappearance');
                 console.log("последний")
-                petsWrapper.addEventListener('animationend', () => {
+                cardContainer.addEventListener('animationend', () => {
                     goToLastPage();
                 }, { once: true });
             }
@@ -35,9 +35,9 @@ window.addEventListener('DOMContentLoaded', () => {
         } else if (document.body.clientWidth <= 768 && document.body.clientWidth > 638) {
             if (activePage != middleArr.length) {
                 activePage = middleArr.length;
-                petsWrapper.classList.add('disappearance');
+                cardContainer.classList.add('disappearance');
 
-                petsWrapper.addEventListener('animationend', () => {
+                cardContainer.addEventListener('animationend', () => {
                     goToLastPage();
                 }, { once: true });
             }
@@ -45,9 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             if (activePage != smallArr.length) {
                 activePage = smallArr.length;
-                petsWrapper.classList.add('disappearance');
+                cardContainer.classList.add('disappearance');
 
-                petsWrapper.addEventListener('animationend', () => {
+                cardContainer.addEventListener('animationend', () => {
                     goToLastPage();
                 }, { once: true });
             }
@@ -60,9 +60,9 @@ window.addEventListener('DOMContentLoaded', () => {
         if (activePage != 1) {
 
             
-            petsWrapper.classList.add('disappearance');
+            cardContainer.classList.add('disappearance');
 
-            petsWrapper.addEventListener('animationend', () => {
+            cardContainer.addEventListener('animationend', () => {
                 activePage = 1;
                 numberPage.textContent = activePage;
                 initPagination();
@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 arrowPrev.classList.add('arrow-inactive');
                 arrowStart.classList.add('arrow-inactive');
 
-                petsWrapper.classList.remove('disappearance');
+                cardContainer.classList.remove('disappearance');
             }, { once: true });
         }
     });
@@ -89,9 +89,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         
         if (activePage < arr.length) {
-            petsWrapper.classList.add('disappearance');
+            cardContainer.classList.add('disappearance');
 
-            petsWrapper.addEventListener('animationend', () => {
+            cardContainer.addEventListener('animationend', () => {
 
                 activePage++;
                 numberPage.textContent = activePage;
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     arrowNext.classList.add('arrow-inactive');
                     arrowEnd.classList.add('arrow-inactive');
                 }
-                petsWrapper.classList.remove('disappearance');
+                cardContainer.classList.remove('disappearance');
             }, { once: true })
         }
     });
@@ -124,8 +124,8 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         if (activePage > 1) {
-            petsWrapper.classList.add('disappearance');
-            petsWrapper.addEventListener('animationend', () => {
+            cardContainer.classList.add('disappearance');
+            cardContainer.addEventListener('animationend', () => {
                 activePage--;
                 numberPage.textContent = activePage;
                 initPagination();
@@ -139,7 +139,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     arrowPrev.classList.add('arrow-inactive');
                     arrowStart.classList.add('arrow-inactive');
                 }
-                petsWrapper.classList.remove('disappearance');
+                cardContainer.classList.remove('disappearance');
             }, { once: true })
         }
     });
@@ -167,11 +167,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 `
        
     
-        petsWrapper.append(card);
+        cardContainer.append(card);
     }
 
     function initPagination() {
-        petsWrapper.innerHTML = '';
+        cardContainer.innerHTML = '';
 
         if (document.body.clientWidth > 768) {
             if (activePage >= arrItems.length) {
@@ -283,7 +283,7 @@ window.addEventListener('DOMContentLoaded', () => {
         arrowNext.classList.add('arrow-inactive');
         arrowPrev.classList.remove('arrow-inactive');
         arrowStart.classList.remove('arrow-inactive');
-        petsWrapper.classList.remove('disappearance');
+        cardContainer.classList.remove('disappearance');
     }
 
 })
