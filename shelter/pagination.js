@@ -165,11 +165,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 <h3>${data[idOfElement].name}</h3>
                 <div class="slider_button">Learn more</div>
                 `
-        // <img class="item-img" src="../images/pets/${data[idOfElement].img}" alt="woody">
-        // <p class="heading pets-heading">${data[idOfElement].name}</p>
-        // <form class="our-friends-form" action="#">
-        //     <button class="button our-friend-button">Learn more</button>
-        // </form>
+       
     
         petsWrapper.append(card);
     }
