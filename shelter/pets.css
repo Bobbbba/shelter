@@ -166,6 +166,7 @@ h2 {
     transition: all 0.1s ease;
   }
 }
+
 .pets_title {
   padding-bottom: 55px;
   padding-top: 82px;
@@ -185,9 +186,12 @@ h2 {
   height: 52px;
   padding: 0;
   border-radius: 50%;
-  cursor: default;
+  cursor: pointer;
 
-  border: 2px solid #cdcdcd;
+  border: 2px solid #f1cdb3;
+}
+.button_paginator_inactive:hover {
+  background: #f1cdb3;
 }
 .button_paginator_inactive_two {
   display: flex;
@@ -197,9 +201,12 @@ h2 {
   height: 52px;
   padding: 0;
   border-radius: 50%;
-  cursor: default;
+  cursor: pointer;
 
-  border: 2px solid #cdcdcd;
+  border: 2px solid #f1cdb3;
+}
+.button_paginator_inactive_two:hover {
+  background: #f1cdb3;
 }
 
 .button_paginator_active {
@@ -244,6 +251,13 @@ h2 {
 }
 .button_paginator_all:hover {
   background: #f1cdb3;
+}
+.arrow-inactive,
+.arrow-inactive:hover{
+  border-color: black;
+  opacity: 0.4;
+  background: #ffffff;
+  cursor: default;
 }
 
 .into {
@@ -737,3 +751,4 @@ body.no-scroll {
   animation-duration: 0.5s;
   animation-direction: reverse;
 }
+
